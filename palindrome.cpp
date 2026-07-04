@@ -12,7 +12,11 @@ int main(){
         for(int i = a.length()-1; i >= 0; i--){
             reverse.push_back(a[i]);
         }
-        cout << reverse << endl;
+        if(a == reverse){
+            cout << "YES" << endl;
+        } else {
+            cout << "NO" << endl;
+        }
     }
 
     return 0;
