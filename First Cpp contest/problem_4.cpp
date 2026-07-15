@@ -8,4 +8,5 @@ int main(){
 		cin >> N;
 		cout << N*4LL << endl;
 	}
+    return 0;
 }

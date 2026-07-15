@@ -23,4 +23,6 @@ int main(){
         cout << c << " ";
         c -= step;
     }
+
+    return 0;
 }
