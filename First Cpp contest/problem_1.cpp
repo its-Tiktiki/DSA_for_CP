@@ -8,6 +8,9 @@ int main(){
     string word;
 
     while(ss >> word){
+        for(char &c: word){
+            c = toupper(c);
+        }
         cout << word << endl;
     }
 
