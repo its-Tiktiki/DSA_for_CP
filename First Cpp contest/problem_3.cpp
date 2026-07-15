@@ -18,4 +18,5 @@ int main(){
         }
         cout << decimal_num << endl;
 	}
+    return 0;
 }
