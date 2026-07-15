@@ -7,7 +7,7 @@ int main(){
 	for(int i = 0; i < t; i++){
 		int num;
 		cin >> num;
-		int ans = 1;
+		long long ans = 1;
 		for(int j = 0; j < num; j++){
 			int n;
 			cin >> n;
