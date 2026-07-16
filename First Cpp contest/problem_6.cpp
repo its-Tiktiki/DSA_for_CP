@@ -2,9 +2,11 @@
 using namespace std;
 int main(){
     int t;
+    cout << "Enter Test case number: ";
     cin >> t;
     while(t--){
         int N;
+        cout << "Enter a number: ";
         cin >> N;
         vector<long long> prev_v = {1};
 

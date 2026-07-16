@@ -5,8 +5,10 @@ int main(){
 	cin >> T;
 	for(int i = 0; i < T; i++){
 		int N;
+		cout << "Enter test case number: ";
 		cin >> N;
 		string S;
+		cout << "Enter the string of binary: ";
 		cin >> S;
 
         long long decimal_num = 0;

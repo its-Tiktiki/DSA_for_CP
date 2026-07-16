@@ -2,6 +2,7 @@
 using namespace std;
 int main(){
 	int A, B, C;
+    cout << "Enter value of A, B and C: ";
 	cin >> A >> B >> C;
     set<int> num = {A, B};
     for(int i = 2; i < C; i++){

@@ -2,6 +2,7 @@
 using namespace std;
 int main(){
     string line;
+    cout << "Enter a line: ";
     getline(cin, line);
 
     stringstream ss(line);
