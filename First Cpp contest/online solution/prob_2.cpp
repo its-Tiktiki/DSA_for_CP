@@ -3,8 +3,7 @@ using namespace std;
 int main(){
 	int t;
 	cin >> t;
-
-	for(t--){
+	while(t--){
 		int num;
 		cin >> num;
 		long long ans = 1;
