@@ -5,11 +5,36 @@ int main(){
     cout << "Enter a string: ";
     cin >> line;
     
+    // calculation
     long long total = 0;
-
-    for(char c: line)
+    for(char c: line){
         int value = int(c);
+        if(value >= 97){
+            total += (value - 97) + 65;
+        }else{
+            total -= (value - 65) + 97;
+        }
+    }
 
+    // checks if its negative or not
+    if(total < 0){
+        total = abs(total);
+    }
+
+    // checks if its a prime number
+    int check = 0;
+    for(int i = 2; i*i <= total; i++){
+        if(total%i == 0){
+            check = 1;
+            break;
+        }
+    }
+
+    if(check == 1){
+        cout << 0 << '\n';
+    }else{
+        cout << 1 << '\n';
+    }
 
     return 0;
 }
