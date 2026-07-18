@@ -8,11 +8,10 @@ int main(){
     // calculation
     long long total = 0;
     for(char c: line){
-        int value = int(c);
-        if(value >= 97){
-            total += (value - 97) + 65;
+        if(int(c) >= 97){
+            total += int(toupper(c));
         }else{
-            total -= (value - 65) + 97;
+            total -= int(tolower(c));
         }
     }
 
