@@ -18,6 +18,7 @@ int ar[N][N];
 long long pf[N][N];
 int main(){
     int n;
+    cout << "Enter value of n: ";
     cin >> n;
     for(int i = 1; i <= n; ++i){
         for(int j = 1; j <= n; ++j){
@@ -26,6 +27,7 @@ int main(){
         }
     }
     int q;
+    cout << "Enter query: ";
     cin >> q;
     while(q--){
         int a, b, c, d;
