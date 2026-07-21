@@ -2,15 +2,18 @@
 using namespace std;
 int main(){
     int t;
+    cout << "Enter test cases number: ";
     cin >> t;
     while(t--){
         int n, q;
+        cout << "Enter value of n and q: ";
         cin >> n >> q;
         int a[n+10];
         int forward[n+10];
         int backward[n+10];
         forward[0] = backward[n+1] = 0;
         for(int i = 1; i <= n; ++i){
+            cout << "enter array value: ";
             cin >> a[i];
         }
         // forward gcd
@@ -28,7 +31,6 @@ int main(){
             cout << __gcd(forward[l-1], backward[r+1]) << endl;
         }
     }
-
 
     return 0;
 }
