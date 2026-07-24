@@ -1,29 +1,42 @@
 #include <bits/stdc++.h>
 using namespace std;
+const int N = 10e5+10;
+int hsh[N][26];
+
 int main(){
 
     int t;
     while(t--){
-        int l, r;
-        cin >> l >> r;
+        for(int i = 0; i < N; ++i){
+            for(int j = 0; j < 26; ++j){
+                hsh[i][j] = 0;
+            }
+        }
+        int n, q;
+        cin >> n >> q;
         string s;
         cin >> s;
-        int hsh[26];
+        for(int i =0; i < n; ++i){
+            hsh[i+1][s[i] - 'a']++;
+        }
         for(int i = 0; i < 26; ++i){
-            hsh[i] = 0;
+            for(int j = 1; j <= n; ++j){
+                hsh[j][i] += hsh[j-1][i];
+            }
         }
 
-        // l and r is one based but string is 0 based
-        l--; r--;
-        for(int i = l; i <= r; ++i){
-            hsh[s[i] - 'a']++;
+        while(q--){
+            int l, r;
+            cin >> l >> r;
+            int oddCt = 0;
+            for(int i = 0; i < 26; ++i){
+                int charCt = hsh[r][i] - hsh[l-1][i];
+                if(charCt % 2 != 0) oddCt++;
+            }
+            if(oddCt > 1) cout << "NO\n";
+            else cout << "YES\n";
+
         }
-        int oddCt = 0;
-        for(int i = 0; i < 26; ++i){
-            if(hsh[i] % 2 != 0) oddCt++;
-        }
-        if(oddCt > 1) cout << "NO\n";
-        else cout << "YES\n";
 
     }
 
