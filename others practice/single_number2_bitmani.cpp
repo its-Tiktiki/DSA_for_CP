@@ -17,7 +17,7 @@ int main(){
             ans |= (1 << i);
         }
     }
-    cout << ans;
+    cout << "Answer: " << ans << endl;
 
     return 0;
 }
