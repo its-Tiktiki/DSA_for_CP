@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
+    
     string line;
     cout << "Enter a line: ";
     getline(cin, line);
@@ -14,7 +15,6 @@ int main(){
         }
         cout << word << endl;
     }
-
 
     return 0;
 }
