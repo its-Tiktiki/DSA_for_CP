@@ -5,6 +5,7 @@ int main(){
     int t;
     cin >> t;
     cin.ignore(); // To ignore the newline character after reading t
+    
     while(t--){
         string a;
         getline(cin, a);
