@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-const int M = 10e9 + 7;
 const int N = 1e5 + 10;
 long long fact[N];
 
