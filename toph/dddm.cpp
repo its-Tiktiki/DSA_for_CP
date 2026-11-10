@@ -8,10 +8,8 @@ int main(){
         if(A[i] == 's'){
             A[i] = '$';
         }
-
-
-
-        
     }
+    cout << A;
+    cout << A+"arpa";
     return 0;
 }
